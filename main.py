@@ -2,4 +2,6 @@ import minosites
 import sorozat
 
 lista = sorozat.masodik_feladat()
-sorozat.oszthatok_szama(lista)
+oszthatok = sorozat.oszthatok_szama(lista)
+sorozat.konzolra_ir(oszthatok)
+sorozat.fajl_ir(oszthatok)

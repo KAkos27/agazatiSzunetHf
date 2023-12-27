@@ -23,3 +23,11 @@ def oszthatok_szama(lista):
         if int(lista[i]) % 10 == 0:
             oszthatok += 1
     return oszthatok
+
+def konzolra_ir(oszthatok):
+    print(f"Tízzel osztható számok száma: {oszthatok}")
+
+def fajl_ir(oszthatok):
+    fajl = open("kimutatas.txt","w",encoding="utf-8")
+    fajl.write(f"Tízzel osztható számok száma: {oszthatok}")
+    fajl.close()
