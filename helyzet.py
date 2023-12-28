@@ -32,7 +32,7 @@ def atlag(lista):
     paros_szamolo = 0
     id_osszeg = 0
     for i in range(0, len(lista), 1):
-        terem = lista[i].hely.replace("T", "")
+        terem = lista[i].hely.strip("T")
 
         if int(terem) % 2 == 0:
             id_osszeg += int(lista[i].id)
